@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="750dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="38dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#B5000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/registrarBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:layout_weight="1"
+                    android:onClick="displayToast"
+                    android:text="Registrar usuario" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoComplementText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:completionHint="¿Por que estas registrandote?"
+                    android:completionThreshold="1"
+                    android:hint="¿Por que te registrarias?"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5"
+                    tools:ignore="TextContrastCheck" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/lugares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:hint="Dime en que lugares te han pedido que te registres"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="91dp"
+                    android:layout_marginEnd="91dp"
+                    android:ems="10"
+                    android:hint="Usuario"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/editTextTextPassword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="91dp"
+                    android:layout_marginEnd="91dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="text|textPassword"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/editTextTextPassword3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="91dp"
+                    android:layout_marginEnd="91dp"
+                    android:ems="10"
+                    android:hint="NIC(codigo de seguridad)"
+                    android:inputType="textPassword|numberPassword"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5" />
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:ems="10"
+                    android:hint="Correo electronico"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5" />
+
+                <EditText
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:ems="10"
+                    android:hint="Numero telefonico"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/editTextTextPostalAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:ems="10"
+                    android:hint="Codigo postal"
+                    android:inputType="textPostalAddress"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5" />
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Deja una opinion"
+                    android:inputType="textMultiLine"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5" />
+
+                <EditText
+                    android:id="@+id/editTextTime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:ems="10"
+                    android:hint="Hora"
+                    android:inputType="time"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5" />
+
+                <EditText
+                    android:id="@+id/editTextDate2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:ems="10"
+                    android:hint="Fecha"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textColor="#FFD6D04C"
+                    android:textColorHint="#FF03DAC5" />
+
+                <CheckedTextView
+                    android:id="@+id/optionSBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:hint="CheckedTextView"
+                    android:text="¿Estas de acuerdo con las condiciones?"
+
+                    android:textColor="#FFFFFFFF" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/materiaFavorita"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginEnd="90dp"
+                        android:hint="Ingresa tu materia favorita" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

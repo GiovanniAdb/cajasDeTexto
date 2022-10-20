@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tipos de cajas de texto</string>
+
+    <!-- Fuente de datos -->
+    <string-array name="opciones">
+        <item>Me estan obligando</item>
+        <item>Solo es por la practica</item>
+        <item>Por la anecdota</item>
+        <item>Me gusta hacer esto</item>
+    </string-array>
+    <string-array name="opcionesLugares">
+        <item>Aqui</item>
+        <item>Formularios de proyectos de jovenes</item>
+        <item>Para ir aomar</item>
+        <item>Para crear una cuenta en un lugar
+            donde claramente no quiero registrarme</item>
+    </string-array>
+
+</resources>
